@@ -1,8 +1,12 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url("../fonts/SF-Pro.ttf") format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 html {
@@ -10,29 +14,27 @@ html {
 }
 
 body {
+  background: #101414;
+  color: #fff;
+  font-family: 'SF Pro', sans-serif;
+}
+
+
+#home {
   display: grid;
   place-items: center;
-  background: #333;
-  color: #fff;
+  height: 110vh;
+  text-align: center;
 }
-
-h1 {
-  margin-top: 10rem;
-  font-weight: 500;
+#home div {
+  margin-bottom: 25vh;
 }
-
 h2 {
-  margin-top: 2rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
 }
-
-.links {
-  margin-top: 1rem;
-}
-a {
-  text-decoration: none;
-}
-a img {
-  display: inline-block;
-  width: 3rem;
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
 }
