@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: #101414;
+  background: #151515;
   color: #fff;
   font-family: 'SF Pro', sans-serif;
 }
@@ -25,16 +25,30 @@ body {
   place-items: center;
   height: 110vh;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 #home div {
   margin-bottom: 25vh;
 }
 h2 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 h1 {
   font-size: 4rem;
   font-weight: 600;
+}
+
+
+
+#content {
+  margin-top: 110vh;
+  height: 100vh;
+  background: #fff;
 }
