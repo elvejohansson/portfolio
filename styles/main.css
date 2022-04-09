@@ -3,6 +3,10 @@
   src: url("../fonts/SF-Pro.ttf") format('truetype');
 }
 
+:root {
+  --accent: #3D52D5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +23,40 @@ body {
   font-family: 'SF Pro', sans-serif;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+a {
+  text-decoration: underline;
+  font-weight: 800;
+  color: var(--accent);
+}
+hr {
+  background: rgb(0, 0, 0);
+  height: 1px;
+  border: none;
+  margin: 15rem 0;
+}
+.button {
+  background: var(--accent);
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+}
 
+/* Home page */
 #home {
   display: grid;
   place-items: center;
@@ -35,20 +72,37 @@ body {
 #home div {
   margin-bottom: 25vh;
 }
-h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-}
-h1 {
-  font-size: 4rem;
-  font-weight: 600;
-}
 
 
 
+/* Main page */
 #content {
   margin-top: 110vh;
-  height: 100vh;
+  padding: 20rem 10%;
   background: #fff;
+  color: #000;
+}
+#content #main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 15%;
+}
+#main img {
+  width: 100%;
+  object-fit: cover;
+}
+#main h1 {
+  font-size: 3.25rem;
+  margin-bottom: 3rem;
+}
+#main p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+#main p.bold {
+  font-weight: 800;
+  margin-top: 5rem;
 }
