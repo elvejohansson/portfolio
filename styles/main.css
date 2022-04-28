@@ -76,33 +76,35 @@ hr {
 
 
 /* Main page */
-#content {
+main {
   margin-top: 110vh;
   padding: 20rem 10%;
   background: #fff;
   color: #000;
 }
-#content #main {
+
+/* Info page */
+main #info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0 15%;
 }
-#main img {
+#info img {
   width: 100%;
   object-fit: cover;
 }
-#main h1 {
+#info h1 {
   font-size: 3.25rem;
   margin-bottom: 3rem;
 }
-#main p {
+#info p {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
-#main p.bold {
+#info p.bold {
   font-weight: 800;
   margin-top: 5rem;
 }
