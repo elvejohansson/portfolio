@@ -1,4 +1,6 @@
-/* CSS variables */
+/* =================== */
+/*    CSS variables    */
+/* =================== */
 :root {
   --dark: #151515;
   --light: #fff;
@@ -10,7 +12,9 @@
 
 
 
-/* CSS reset & base styling */
+/* ============================= */
+/*     Browser defaults reset    */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
@@ -20,14 +24,16 @@ html {
   font-size: 16px;
 }
 body {
-  background: var(--dark);
-  color: #fff;
+  background: var(--light);
+  color: var(--dark);
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 
 
-/* Default element styling */
+/* ============================= */
+/*    Default element styling    */
+/* ============================= */
 h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -45,37 +51,50 @@ a {
 
 
 
-/* Main content */
-main {
-  display: grid;
-  place-items: center;
-}
-main #wrapper {
+/* ================== */
+/*    Landing page    */
+/* ================== */
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 105vh;
+  width: 100%;
+  background: var(--dark);
+  color: var(--light);
+  padding-bottom: 10vh;
 }
-main #socials {
+#home .socials {
   margin-top: 3rem;
 }
-main #socials a {
+#home .socials a {
   text-decoration: none;
 }
-main #socials svg {
+#home .socials svg {
   width: 3rem;
   height: 3rem;
   color: var(--light);
   transition: all 0.25s ease-in-out;
   margin: 0 0.75rem;
 }
-main #socials svg:hover {
+#home .socials svg:hover {
   scale: 1.35;
 }
-main #socials .github:hover {
+#home .socials .github:hover {
   color: var(--github);
 }
-main #socials .linkedin:hover {
+#home .socials .linkedin:hover {
   color: var(--linkedin);
+}
+
+
+
+/* =================== */
+/*    About section    */
+/* =================== */
+#about {
+  height: 200vh;
+  background: var(--light);
+  color: var(--dark);
 }
