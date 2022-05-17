@@ -1,110 +1,89 @@
+/* Fonts setup */
 @font-face {
   font-family: 'SF Pro';
   src: url("../fonts/SF-Pro.ttf") format('truetype');
 }
 
+
+
+/* CSS variables */
 :root {
+  --dark: #151515;
+  --light: #fff;
   --accent: #3D52D5;
+
+  --github: #f5f5f5;
+  --linkedin: #0e76a8;
 }
 
+
+
+/* CSS reset & base styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 16px;
 }
-
 body {
-  background: #151515;
+  background: var(--dark);
   color: #fff;
   font-family: 'SF Pro', sans-serif;
 }
 
+
+
+/* Default element styling */
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 h2 {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
 }
 a {
   text-decoration: underline;
   font-weight: 800;
   color: var(--accent);
-}
-hr {
-  background: rgb(0, 0, 0);
-  height: 1px;
-  border: none;
-  margin: 15rem 0;
-}
-.button {
-  background: var(--accent);
-  display: inline-block;
-  padding: 1.5rem 4rem;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 800;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  margin: 1rem 0;
+  font-size: 1.075rem;
 }
 
-/* Home page */
-#home {
+
+
+/* Main content */
+main {
   display: grid;
   place-items: center;
-  height: 110vh;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
 }
-#home div {
-  margin-bottom: 25vh;
+main #wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-
-
-
-/* Main page */
-main {
-  margin-top: 110vh;
-  padding: 20rem 10%;
-  background: #fff;
-  color: #000;
+main #socials {
+  margin-top: 3rem;
 }
-
-/* Info page */
-main #info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0 15%;
+main #socials a {
+  text-decoration: none;
 }
-#info img {
-  width: 100%;
-  object-fit: cover;
+main #socials svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--light);
+  transition: all 0.25s ease-in-out;
+  margin: 0 0.75rem;
 }
-#info h1 {
-  font-size: 3.25rem;
-  margin-bottom: 3rem;
+main #socials svg:hover {
+  scale: 1.35;
 }
-#info p {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+main #socials .github:hover {
+  color: var(--github);
 }
-#info p.bold {
-  font-weight: 800;
-  margin-top: 5rem;
+main #socials .linkedin:hover {
+  color: var(--linkedin);
 }
