@@ -8,6 +8,8 @@
 
   --github: #f5f5f5;
   --linkedin: #0e76a8;
+  --dribbble: #ea4c89;
+  --twitter: #00acee;
 }
 
 
@@ -87,7 +89,12 @@ a {
 #home .socials .linkedin:hover {
   color: var(--linkedin);
 }
-
+#home .socials .dribbble:hover {
+  color: var(--dribbble);
+}
+#home .socials .twitter:hover {
+  color: var(--twitter);
+}
 
 
 /* =================== */
