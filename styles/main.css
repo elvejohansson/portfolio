@@ -47,8 +47,7 @@ h2 {
 a {
   text-decoration: underline;
   font-weight: 800;
-  color: var(--accent);
-  font-size: 1.075rem;
+  color: inherit;
 }
 
 
